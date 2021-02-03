@@ -7,8 +7,7 @@ import Reducer, { initialState } from './model/reducer';
 
 const store = createStore(
   Reducer,
-  initialState,
-);
+  initialState);
 
 
 ReactDOM.render(

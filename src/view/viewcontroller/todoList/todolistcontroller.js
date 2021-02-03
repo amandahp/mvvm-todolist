@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { connect } from 'react-redux';
 import { onClickButtonTodo, onChangeInputValue } from '../../viewmodel/todoList/todolistVmodel'
 import TodoList from '../../viewpage/todoList/todolist'
@@ -7,7 +6,6 @@ import TodoList from '../../viewpage/todoList/todolist'
 class TodoListController extends React.Component  {
 
      handleOnClick = () => {
-         console.log('disparou')
         const {dispatch} = this.props
         onClickButtonTodo(this.props.input, dispatch)
     }
